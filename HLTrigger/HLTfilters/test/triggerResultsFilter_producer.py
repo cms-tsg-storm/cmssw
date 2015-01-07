@@ -19,8 +19,13 @@ process.PrescaleService = cms.Service('PrescaleService',
         )
     ),
     lvl1Labels = cms.vstring('any'),
-    lvl1DefaultLabel = cms.untracked.string('any')
+    lvl1DefaultLabel = cms.string('any')
 )    
+
+# load the L1 trigger menu from the global tag
+process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff')
+from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag
+process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
 
 # define an empty source, and ask for 100 events
 process.source = cms.Source('EmptySource')
