@@ -6,12 +6,17 @@ process.options = cms.untracked.PSet(
     wantSummary = cms.untracked.bool(True)
 )
 process.load('FWCore.MessageService.MessageLogger_cfi')
-process.MessageLogger.cerr.INFO = cms.untracked.PSet(
-    reportEvery = cms.untracked.int32(1), # every!
-    limit = cms.untracked.int32(-1)       # no limit!
-    )
-process.MessageLogger.cerr.FwkReport.reportEvery = 10 # only report every 10th event start
-process.MessageLogger.cerr_stats.threshold = 'INFO' # also info in statistics
+#process.MessageLogger.cerr.INFO = cms.untracked.PSet(
+#    reportEvery = cms.untracked.int32(1), # every!
+#    limit = cms.untracked.int32(-1)       # no limit!
+#    )
+#process.MessageLogger.cerr.FwkReport.reportEvery = 10 # only report every 10th event start
+#process.MessageLogger.cerr_stats.threshold = 'INFO' # also info in statistics
+
+# load the L1 trigger menu from the global tag
+process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff')
+from Configuration.AlCa.GlobalTag_condDBv2 import GlobalTag
+process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
 
 # read back the trigger decisions
 process.source = cms.Source('PoolSource',
