@@ -4,6 +4,7 @@
 MASTER="/dev/CMSSW_7_4_0/HLT"              # no explicit version, take te most recent
 TARGET="/dev/CMSSW_7_4_0/\$TABLE"          # no explicit version, take te most recent
 TABLES="GRun HIon PIon 50nsGRun LowPU 25nsLowPU"     # $TABLE in the above variable will be expanded to these TABLES
+TABLES="PIon PIon"                                   # $TABLE in the above variable will be expanded to these TABLES
 
 # print extra messages ?
 VERBOSE=false
