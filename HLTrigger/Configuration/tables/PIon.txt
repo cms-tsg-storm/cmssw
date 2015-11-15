@@ -100,6 +100,7 @@ HLT_L1MinimumBiasHF1OR_part19_v*       # JIRA: CMSHLT-644
 HLT_ZeroBias_v*     # Stephanie!
 HLT_Random_v*       # Stephanie!
 HLT_Physics_v*      # Stephanie!
+DST_Physics_v*      # Stephanie!
 
 HLT_ZeroBias_part1_v*       # JIRA: CMSHLT-639
 HLT_ZeroBias_part0_v*       # JIRA: CMSHLT-639
