@@ -183,6 +183,9 @@ HLT_EcalCalibration_v*
 HLT_HcalCalibration_v*
 HLT_TrackerCalibration_v*
 
+AlCa_RPCMuonNormalisation_v*        # JIRA: CMSHLT-642
+AlCa_RPCMuonNoHits_v*               # JIRA: CMSHLT-642
+AlCa_RPCMuonNoTriggers_v*           # JIRA: CMSHLT-642
 
 HLTriggerFirstPath       
 HLTriggerFinalPath       
