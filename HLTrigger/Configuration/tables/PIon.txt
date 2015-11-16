@@ -139,11 +139,11 @@ HLT_L1TOTEM2_ZeroBias_v*    # JIRA: CMSHLT-639
 #HLT_FullTrack30_v*      # JIRA: CMSHLT-631  #commenting out for pp ref (see ticket)
 #HLT_FullTrack45_v*      # JIRA: CMSHLT-631  #commenting out for pp ref (see ticket)
 
-HLT_FullTrack12ForPPRef_v*      # JIRA: CMSHLT-631  #commenting out for pp ref (see ticket)
-HLT_FullTrack18ForPPRef_v*      # JIRA: CMSHLT-631  #commenting out for pp ref (see ticket)
-HLT_FullTrack24ForPPRef_v*      # JIRA: CMSHLT-631  #commenting out for pp ref (see ticket)
-HLT_FullTrack34ForPPRef_v*      # JIRA: CMSHLT-631  #commenting out for pp ref (see ticket)
-HLT_FullTrack45ForPPRef_v*      # JIRA: CMSHLT-631  #commenting out for pp ref (see ticket)
+#HLT_FullTrack12ForPPRef_v*      # JIRA: CMSHLT-631, CMSHLT-659  #commenting out for pp ref (see ticket)
+HLT_FullTrack18ForPPRef_v*      # JIRA: CMSHLT-631  
+HLT_FullTrack24ForPPRef_v*      # JIRA: CMSHLT-631  
+HLT_FullTrack34ForPPRef_v*      # JIRA: CMSHLT-631  
+HLT_FullTrack45ForPPRef_v*      # JIRA: CMSHLT-631  
 
 
 HLT_HIUPCL1DoubleMuOpenNotHF2_v*                    # JIRA: CMSHLT-635
@@ -200,11 +200,11 @@ PhysicsHadronsTausOutput
 PhysicsMuonsOutput
 DQMOutput
 DQMCalibrationOutput
-DQMEventDisplayOutput
+#DQMEventDisplayOutput
 EcalCalibrationOutput
 CalibrationOutput
 TrackerCalibrationOutput
-#NanoDSTOutput
+NanoDSTOutput
 #LookAreaOutput
 RPCMONOutput
 ALCAPHISYMOutput
