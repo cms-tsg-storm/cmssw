@@ -1,11 +1,11 @@
-# /dev/CMSSW_7_4_0/PIon/V196 (CMSSW_7_4_15)
+# /dev/CMSSW_7_4_0/PIon/V197 (CMSSW_7_4_15)
 
 import FWCore.ParameterSet.Config as cms
 
 process = cms.Process( "HLTPIon" )
 
 process.HLTConfigVersion = cms.PSet(
-  tableName = cms.string('/dev/CMSSW_7_4_0/PIon/V196')
+  tableName = cms.string('/dev/CMSSW_7_4_0/PIon/V197')
 )
 
 process.HLTIter4PSetTrajectoryFilterIT = cms.PSet( 
@@ -12857,7 +12857,11 @@ process.hltPreDQMEventDisplayOutputSmart = cms.EDFilter( "TriggerResultsFilter",
     l1tResults = cms.InputTag( "hltGtDigis" ),
     l1techIgnorePrescales = cms.bool( False ),
     hltResults = cms.InputTag( "TriggerResults" ),
-    triggerConditions = cms.vstring(  ),
+    triggerConditions = cms.vstring( 'HLT_AK4PFJet100_Eta5p1_v1',
+      'HLT_HISinglePhoton60_Eta3p1_v1',
+      'HLT_HIDoublePhoton15_Eta1p5_Mass50_1000_v1',
+      'HLT_FullTrack45ForPPRef_v1',
+      'HLT_DmesonPPTrackingGlobal_Dpt40_v1' ),
     throw = cms.bool( True ),
     daqPartitions = cms.uint32( 1 )
 )

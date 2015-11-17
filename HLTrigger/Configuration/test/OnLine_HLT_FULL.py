@@ -1,11 +1,11 @@
-# /dev/CMSSW_7_4_0/HLT/V645 (CMSSW_7_4_15)
+# /dev/CMSSW_7_4_0/HLT/V646 (CMSSW_7_4_15)
 
 import FWCore.ParameterSet.Config as cms
 
 process = cms.Process( "HLTFULL" )
 
 process.HLTConfigVersion = cms.PSet(
-  tableName = cms.string('/dev/CMSSW_7_4_0/HLT/V645')
+  tableName = cms.string('/dev/CMSSW_7_4_0/HLT/V646')
 )
 
 process.HLTIter4PSetTrajectoryFilterIT = cms.PSet( 
@@ -67678,7 +67678,12 @@ process.hltPreDQMEventDisplayOutputSmart = cms.EDFilter( "TriggerResultsFilter",
       'HLT_Photon175_v3',
       'HLT_AK4PFJet100_v3',
       'HLT_HISinglePhoton60_v2',
-      'HLT_L1DoubleJet32_v1' ),
+      'HLT_L1DoubleJet32_v1',
+      'HLT_AK4PFJet100_Eta5p1_v1',
+      'HLT_HISinglePhoton60_Eta3p1_v1',
+      'HLT_HIDoublePhoton15_Eta1p5_Mass50_1000_v1',
+      'HLT_FullTrack45ForPPRef_v1',
+      'HLT_DmesonPPTrackingGlobal_Dpt40_v1' ),
     throw = cms.bool( True ),
     daqPartitions = cms.uint32( 1 )
 )
