@@ -181,7 +181,7 @@ HLT_PixelTracks_Multiplicity160_v*      # JIRA: CMSHLT-646
 
 HLT_EcalCalibration_v*
 HLT_HcalCalibration_v*
-HLT_TrackerCalibration_v*
+#HLT_TrackerCalibration_v*
 
 AlCa_RPCMuonNormalisation_v*        # JIRA: CMSHLT-642
 AlCa_RPCMuonNoHits_v*               # JIRA: CMSHLT-642
@@ -203,10 +203,10 @@ PhysicsHadronsTausOutput
 PhysicsMuonsOutput
 DQMOutput
 DQMCalibrationOutput
-#DQMEventDisplayOutput
+DQMEventDisplayOutput
 EcalCalibrationOutput
 CalibrationOutput
-TrackerCalibrationOutput
+#TrackerCalibrationOutput
 NanoDSTOutput
 #LookAreaOutput
 RPCMONOutput
