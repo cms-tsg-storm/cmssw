@@ -166,6 +166,7 @@ AlCa_EcalPhiSym_v*  # JIRA: CMSHLT-645
 AlCa_LumiPixels_Random_v*   # JIRA: CMSHLT-650
 AlCa_LumiPixels_ZeroBias_v*   # JIRA: CMSHLT-650
 
+HLT_DmesonPPTrackingGlobal_Dpt8_v*      # JIRA: CMSHLT-660
 HLT_DmesonPPTrackingGlobal_Dpt15_v*    # JIRA: CMSHLT-636
 HLT_DmesonPPTrackingGlobal_Dpt20_v*    # JIRA: CMSHLT-636
 HLT_DmesonPPTrackingGlobal_Dpt30_v*    # JIRA: CMSHLT-636
