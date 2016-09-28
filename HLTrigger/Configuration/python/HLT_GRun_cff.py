@@ -1,11 +1,11 @@
-# /dev/CMSSW_8_0_0/GRun/V193 (CMSSW_8_0_19_patch2)
+# /dev/CMSSW_8_0_0/GRun/V198 (CMSSW_8_0_19_patch2)
 
 import FWCore.ParameterSet.Config as cms
 
 fragment = cms.ProcessFragment( "HLT" )
 
 fragment.HLTConfigVersion = cms.PSet(
-  tableName = cms.string('/dev/CMSSW_8_0_0/GRun/V193')
+  tableName = cms.string('/dev/CMSSW_8_0_0/GRun/V198')
 )
 
 fragment.HLTPSetJetCoreStepTrajectoryFilter = cms.PSet( 
@@ -40315,7 +40315,7 @@ fragment.hltPFMETTypeOne190 = cms.EDFilter( "HLT1PFMET",
 fragment.hltL1sETM50ToETM120IorETM75Jet60dPhiMin0p4IorDoubleJetC60ETM60 = cms.EDFilter( "HLTL1TSeed",
     L1SeedsLogicalExpression = cms.string( "L1_ETM50 OR L1_ETM60 OR L1_ETM70 OR L1_ETM75 OR L1_ETM80 OR L1_ETM85 OR L1_ETM90 OR L1_ETM95 OR L1_ETM100 OR L1_ETM120 OR L1_ETM75_Jet60_dPhi_Min0p4 OR L1_DoubleJetC60_ETM60" ),
     L1EGammaInputTag = cms.InputTag( 'hltCaloStage2Digis','EGamma' ),
-    L1JetInputTag = cms.InputTag( "( HLT_IsoMu20_v6 OR HLT_IsoMu24_v4 ) / 25", "( HLT_Ele23_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v9 OR HLT_Ele17_Ele12_CaloIdL_TrackIdL_IsoVL_DZ_v9 ) / 3", "HLT_Mu17_TrkIsoVVL_Mu8_TrkIsoVVL_DZ_v7 / 2", "HLT_L1FatEvents_v1 / 2", "HLT_Physics_v4 / 2", "HLT_Random_v2", "HLT_ZeroBias_v4", "HLT_L1MinimumBiasHF1AND_v2 / 200", "HLT_ZeroBias_FirstCollisionAfterAbortGap_v3", "HLT_ZeroBias_FirstCollisionAfterAbortGap_copy_v1", "HLT_ZeroBias_FirstCollisionAfterAbortGap_TCDS_v1", "HLT_ZeroBias_IsolatedBunches_v3", "HLT_Photon500_v6", "HLT_Photon600_v6", "HLT_Mu300_v3", "HLT_Mu350_v3", "HLT_MET600_v4", "HLT_MET700_v4", "HLT_PFMET500_v6", "HLT_PFMET600_v6", "HLT_Ele250_CaloIdVT_GsfTrkIdT_v6", "HLT_Ele300_CaloIdVT_GsfTrkIdT_v6", "HLT_HT2000_v4", "HLT_HT2500_v4" ),
+    L1JetInputTag = cms.InputTag( 'hltCaloStage2Digis','Jet' ),
     saveTags = cms.bool( True ),
     L1ObjectMapInputTag = cms.InputTag( "hltGtStage2ObjectMap" ),
     L1EtSumInputTag = cms.InputTag( 'hltCaloStage2Digis','EtSum' ),
