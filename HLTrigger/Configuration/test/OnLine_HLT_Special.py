@@ -1,6 +1,6 @@
 # hltGetConfiguration /dev/CMSSW_16_1_0/Special --full --data --type Special --unprescale --process HLTSpecial --globaltag auto:run3_hlt_Special --input file:RelVal_Raw_Special_DATA.root
 
-# /dev/CMSSW_16_1_0/Special/V21 (CMSSW_16_1_0)
+# /dev/CMSSW_16_1_0/Special/V23 (CMSSW_16_1_0)
 
 import FWCore.ParameterSet.Config as cms
 
@@ -9,7 +9,7 @@ process = cms.Process( "HLTSpecial" )
 process.load("Configuration.StandardSequences.Accelerators_cff")
 
 process.HLTConfigVersion = cms.PSet(
-  tableName = cms.string("/dev/CMSSW_16_1_0/Special/V21")
+  tableName = cms.string("/dev/CMSSW_16_1_0/Special/V23")
 )
 
 process.HLTGroupedCkfTrajectoryBuilderP5 = cms.PSet( 
@@ -17403,6 +17403,7 @@ process.hltOutputPhysicsScoutingPFMonitor = cms.OutputModule( "PoolOutputModule"
     SelectEvents = cms.untracked.PSet(  SelectEvents = cms.vstring( 'Dataset_ScoutingPFMonitor' ) ),
     outputCommands = cms.untracked.vstring( 'drop *',
       'keep *_hltScoutingEgammaPacker_*_*',
+      'keep *_hltScoutingMuonPackerNoVtx2025_*_*',
       'keep *_hltScoutingMuonPackerNoVtx_*_*',
       'keep *_hltScoutingMuonPackerVtx_*_*',
       'keep *_hltScoutingPFPacker_*_*',
@@ -18655,6 +18656,7 @@ process.hltOutputScoutingPF0 = cms.OutputModule( "PoolOutputModule",
     outputCommands = cms.untracked.vstring( 'drop *',
       'keep *_hltFEDSelectorL1_*_*',
       'keep *_hltScoutingEgammaPacker_*_*',
+      'keep *_hltScoutingMuonPackerNoVtx2025_*_*',
       'keep *_hltScoutingMuonPackerNoVtx_*_*',
       'keep *_hltScoutingMuonPackerVtx_*_*',
       'keep *_hltScoutingPFPacker_*_*',
@@ -18678,6 +18680,7 @@ process.hltOutputScoutingPF1 = cms.OutputModule( "PoolOutputModule",
     outputCommands = cms.untracked.vstring( 'drop *',
       'keep *_hltFEDSelectorL1_*_*',
       'keep *_hltScoutingEgammaPacker_*_*',
+      'keep *_hltScoutingMuonPackerNoVtx2025_*_*',
       'keep *_hltScoutingMuonPackerNoVtx_*_*',
       'keep *_hltScoutingMuonPackerVtx_*_*',
       'keep *_hltScoutingPFPacker_*_*',

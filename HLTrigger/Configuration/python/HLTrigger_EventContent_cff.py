@@ -19,6 +19,7 @@ HLTriggerRAW = cms.PSet(
         'keep triggerTriggerEvent_*_*_*',
         'keep *_hltFEDSelectorL1_*_*',
         'keep *_hltScoutingEgammaPacker_*_*',
+        'keep *_hltScoutingMuonPackerNoVtx2025_*_*',
         'keep *_hltScoutingMuonPackerNoVtx_*_*',
         'keep *_hltScoutingMuonPackerVtx_*_*',
         'keep *_hltScoutingPFPacker_*_*',
@@ -38,6 +39,7 @@ HLTriggerRECO = cms.PSet(
         'keep triggerTriggerEvent_*_*_*',
         'keep *_hltFEDSelectorL1_*_*',
         'keep *_hltScoutingEgammaPacker_*_*',
+        'keep *_hltScoutingMuonPackerNoVtx2025_*_*',
         'keep *_hltScoutingMuonPackerNoVtx_*_*',
         'keep *_hltScoutingMuonPackerVtx_*_*',
         'keep *_hltScoutingPFPacker_*_*',
@@ -57,6 +59,7 @@ HLTriggerAOD = cms.PSet(
         'keep triggerTriggerEvent_*_*_*',
         'keep *_hltFEDSelectorL1_*_*',
         'keep *_hltScoutingEgammaPacker_*_*',
+        'keep *_hltScoutingMuonPackerNoVtx2025_*_*',
         'keep *_hltScoutingMuonPackerNoVtx_*_*',
         'keep *_hltScoutingMuonPackerVtx_*_*',
         'keep *_hltScoutingPFPacker_*_*',
@@ -73,6 +76,7 @@ HLTriggerMINIAOD = cms.PSet(
         'drop *_hlt*_*_*',
         'keep *_hltFEDSelectorL1_*_*',
         'keep *_hltScoutingEgammaPacker_*_*',
+        'keep *_hltScoutingMuonPackerNoVtx2025_*_*',
         'keep *_hltScoutingMuonPackerNoVtx_*_*',
         'keep *_hltScoutingMuonPackerVtx_*_*',
         'keep *_hltScoutingPFPacker_*_*',
@@ -90,6 +94,7 @@ HLTriggerMINIAODSIM = cms.PSet(
         'drop *_hlt*_*_*',
         'keep *_hltFEDSelectorL1_*_*',
         'keep *_hltScoutingEgammaPacker_*_*',
+        'keep *_hltScoutingMuonPackerNoVtx2025_*_*',
         'keep *_hltScoutingMuonPackerNoVtx_*_*',
         'keep *_hltScoutingMuonPackerVtx_*_*',
         'keep *_hltScoutingPFPacker_*_*',
@@ -291,7 +296,8 @@ HLTDebugRAW = cms.PSet(
         'keep recoRecoEcalCandidates_*_*_*',
         'keep triggerTriggerEventWithRefs_*_*_*',
         'keep triggerTriggerEvent_*_*_*',
-        'keep triggerTriggerFilterObjectWithRefs_*_*_*'
+        'keep triggerTriggerFilterObjectWithRefs_*_*_*',
+        'keep *_hltScoutingMuonPackerNoVtx2025_*_*'
     ) )
 )
 
@@ -485,7 +491,8 @@ HLTDebugFEVT = cms.PSet(
         'keep recoRecoEcalCandidates_*_*_*',
         'keep triggerTriggerEventWithRefs_*_*_*',
         'keep triggerTriggerEvent_*_*_*',
-        'keep triggerTriggerFilterObjectWithRefs_*_*_*'
+        'keep triggerTriggerFilterObjectWithRefs_*_*_*',
+        'keep *_hltScoutingMuonPackerNoVtx2025_*_*'
     ) )
 )
 
@@ -493,6 +500,7 @@ HLTScouting = cms.PSet(
     outputCommands = cms.vstring( *(
         'keep *_hltFEDSelectorL1_*_*',
         'keep *_hltScoutingEgammaPacker_*_*',
+        'keep *_hltScoutingMuonPackerNoVtx2025_*_*',
         'keep *_hltScoutingMuonPackerNoVtx_*_*',
         'keep *_hltScoutingMuonPackerVtx_*_*',
         'keep *_hltScoutingPFPacker_*_*',
