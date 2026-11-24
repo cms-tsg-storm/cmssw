@@ -867,6 +867,28 @@ DQM_HcalReconstruction_v*  # CMSHLT-2287, CMSHLT-2696, CMSHLT-2720
 DST_PFScouting_DoubleMuonNoVtx2025_v*	  # CMSHLT-3871
 DST_PFScouting_ZeroBias_MuonNoVtx2025_v*  # CMSHLT-3871
 
+HLT_DoubleMediumDeepTauPFTauHPS35_L2NN_eta2p1_v*	# CMSHLT-3874
+HLT_DoubleMediumDeepTauPFTauHPS30_L2NN_eta2p1_OneProng_v* # CMSHLT-3874
+HLT_DoubleMediumDeepTauPFTauHPS30_L2NN_eta2p1_PFJet60_v*  # CMSHLT-3874
+HLT_DoubleMediumDeepTauPFTauHPS30_L2NN_eta2p1_PFJet75_v*  # CMSHLT-3874
+HLT_LooseDeepTauPFTauHPS180_L2NN_eta2p1_v*		  # CMSHLT-3874
+HLT_VBF_DiPFJet45_Mjj650_MediumDeepTauPFTauHPS45_L2NN_eta2p1_v*	# CMSHLT-3874
+HLT_VBF_DiPFJet45_Mjj750_MediumDeepTauPFTauHPS45_L2NN_eta2p1_v*	# CMSHLT-3874
+HLT_VBF_DoubleMediumDeepTauPFTauHPS20_eta2p1_v*			# CMSHLT-3874
+HLT_DoublePFJets40_Mass500_MediumDeepTauPFTauHPS45_L2NN_MediumDeepTauPFTauHPS20_eta2p1_v*	# CMSHLT-3874
+HLT_VBF_DiPFJet45_Mjj500_Detajj2p5_MediumDeepTauPFTauHPS45_L2NN_eta2p1_v* # CMSHLT-3874
+HLT_Ele24_eta2p1_WPTight_Gsf_LooseDeepTauPFTauHPS30_eta2p1_CrossL1_v*	  # CMSHlt-3874
+HLT_IsoMu20_eta2p1_LooseDeepTauPFTauHPS27_eta2p1_CrossL1_v*		  # CMSHLT-3874
+HLT_IsoMu24_eta2p1_MediumDeepTauPFTauHPS35_L2NN_eta2p1_CrossL1_v*	  # CMSHLT-3874
+HLT_IsoMu24_eta2p1_LooseDeepTauPFTauHPS30_eta2p1_CrossL1_v*		  # CMSHLT-3874
+HLT_IsoMu24_eta2p1_LooseDeepTauPFTauHPS180_eta2p1_v*			  # CMSHLT-3874
+HLT_IsoMu24_eta2p1_MediumDeepTauPFTauHPS30_L2NN_eta2p1_CrossL1_v*	  # CMSHLT-3874
+HLT_IsoMu24_eta2p1_MediumDeepTauPFTauHPS30_L2NN_eta2p1_PFJet60_CrossL1_v* # CMSHLT-3874
+HLT_IsoMu24_eta2p1_MediumDeepTauPFTauHPS30_L2NN_eta2p1_PFJet75_CrossL1_v* # CMSHLT-3874
+HLT_IsoMu24_eta2p1_MediumDeepTauPFTauHPS20_eta2p1_SingleL1_v*		  # CMSHLT-3874
+HLT_IsoMu24_eta2p1_MediumDeepTauPFTauHPS45_L2NN_eta2p1_CrossL1_v*	  # CMSLT-3874
+HLT_IsoMu24_eta2p1_MediumDeepTauPFTauHPS30_L2NN_eta2p1_OneProng_CrossL1_v*  # CMSHLT-3874
+
 ## EndPaths ##
 
 PhysicsCommissioningOutput
